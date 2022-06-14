@@ -2,6 +2,8 @@ logging:
   enabled: false
   level: 10 # 10 = debug, 50 = critical
 paths:
-  cg: "/dev/captain-grant/" # path from CG repo
-  src: "/Downloads/" # folder to take human JSON from
-  cgteams: "/dev/captain-grant/teams/" #path to teams fo
+  # os.path.join treats strings that start with / as absolute paths, so leading slash
+  # has been omitted
+  cg: "dev/captain-grant/" # path from CG repo
+  cgteams: "teams/" #path to teams fo
+  src: "Downloads/" # folder to take human JSON from
